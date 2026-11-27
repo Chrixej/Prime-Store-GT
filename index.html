@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12402c">
+  <title>Prime Store GT | Catálogo navideño</title>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <img id="h" alt="Familia con cojines navideños en la sala">
+    <div class="hero-copy">
+      <h1>Prime Store GT</h1>
+      <p>Catálogo navideño: cojines, cortinas y camas para mascotas. Agrega lo que te guste y envía todo tu pedido en un solo mensaje por WhatsApp.</p>
+    </div>
+  </header>
+
+  <nav id="nv" aria-label="Categorías del catálogo"></nav>
+  <main id="m"></main>
+
+  <button class="fab" id="fab" type="button" aria-label="Abrir carrito">Carrito</button>
+
+  <div id="lb" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" type="button" aria-label="Cerrar imagen">×</button>
+    <img alt="Producto ampliado">
+  </div>
+
+  <div id="cp" hidden>
+    <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-heading">
+        <h2 id="cart-title">Mi carrito</h2>
+        <button class="close-cart" id="cx" type="button" aria-label="Cerrar carrito">×</button>
+      </div>
+      <ul id="cl" aria-live="polite"></ul>
+      <p class="t">Total estimado: <b id="ct">Q0.00</b></p>
+      <p class="d">El envío se confirma por WhatsApp. Si WhatsApp no se abre, toca “Copiar pedido” y envíalo al +502 5407 1797.</p>
+      <a class="b" id="send" hidden target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+      <button class="b x" id="cc" type="button" hidden>Copiar pedido</button>
+      <button class="b x continue" id="continue" type="button">Seguir comprando</button>
+    </div>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
